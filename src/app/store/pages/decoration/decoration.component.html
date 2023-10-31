@@ -1,0 +1,14 @@
+<div class="h-screen overflow-y-auto">
+    <p>Decoración</p>
+
+    <div class="grid grid-cols-3">
+        <div *ngFor="let product of products" class="p-3 w-72">
+            <img src="{{product.images}}" alt="" class="rounded-lg">
+            <div class="font-semibold">{{product.title}}</div>
+            <div>Precio: S./{{product.price}}</div>
+            <div>{{product.description}}</div>
+            
+        </div>
+    </div>
+    
+</div>
